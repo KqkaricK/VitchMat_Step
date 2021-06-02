@@ -52,6 +52,8 @@ namespace VitchMat_SLAY
             this.darkLabel3 = new DarkUI.Controls.DarkLabel();
             this.darkLabel7 = new DarkUI.Controls.DarkLabel();
             this.darkLabel9 = new DarkUI.Controls.DarkLabel();
+            this.darkLabel10 = new DarkUI.Controls.DarkLabel();
+            this.darkLabel11 = new DarkUI.Controls.DarkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Xmax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Y0)).BeginInit();
@@ -102,12 +104,12 @@ namespace VitchMat_SLAY
             // 
             // darkButton1
             // 
-            this.darkButton1.Location = new System.Drawing.Point(383, 13);
+            this.darkButton1.Location = new System.Drawing.Point(373, 13);
             this.darkButton1.Name = "darkButton1";
             this.darkButton1.Padding = new System.Windows.Forms.Padding(5);
-            this.darkButton1.Size = new System.Drawing.Size(102, 23);
+            this.darkButton1.Size = new System.Drawing.Size(112, 23);
             this.darkButton1.TabIndex = 50;
-            this.darkButton1.Text = "Создать СЛАУ";
+            this.darkButton1.Text = "Создать Матрицу";
             this.darkButton1.Click += new System.EventHandler(this.darkButton1_Click);
             // 
             // Xmax
@@ -141,10 +143,10 @@ namespace VitchMat_SLAY
             // darkButton2
             // 
             this.darkButton2.Enabled = false;
-            this.darkButton2.Location = new System.Drawing.Point(383, 274);
+            this.darkButton2.Location = new System.Drawing.Point(373, 274);
             this.darkButton2.Name = "darkButton2";
             this.darkButton2.Padding = new System.Windows.Forms.Padding(5);
-            this.darkButton2.Size = new System.Drawing.Size(102, 23);
+            this.darkButton2.Size = new System.Drawing.Size(112, 23);
             this.darkButton2.TabIndex = 55;
             this.darkButton2.Text = "Степеной метод";
             this.darkButton2.Click += new System.EventHandler(this.darkButton2_Click_1);
@@ -201,7 +203,7 @@ namespace VitchMat_SLAY
             // 
             this.darkLabel5.AutoSize = true;
             this.darkLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.darkLabel5.Location = new System.Drawing.Point(380, 255);
+            this.darkLabel5.Location = new System.Drawing.Point(370, 255);
             this.darkLabel5.Name = "darkLabel5";
             this.darkLabel5.Size = new System.Drawing.Size(94, 13);
             this.darkLabel5.TabIndex = 70;
@@ -211,7 +213,7 @@ namespace VitchMat_SLAY
             // 
             this.l_k.AutoSize = true;
             this.l_k.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.l_k.Location = new System.Drawing.Point(480, 255);
+            this.l_k.Location = new System.Drawing.Point(470, 255);
             this.l_k.Name = "l_k";
             this.l_k.Size = new System.Drawing.Size(10, 13);
             this.l_k.TabIndex = 71;
@@ -342,11 +344,33 @@ namespace VitchMat_SLAY
             this.darkLabel9.TabIndex = 81;
             this.darkLabel9.Text = "X:";
             // 
+            // darkLabel10
+            // 
+            this.darkLabel10.AutoSize = true;
+            this.darkLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.darkLabel10.Location = new System.Drawing.Point(110, 268);
+            this.darkLabel10.Name = "darkLabel10";
+            this.darkLabel10.Size = new System.Drawing.Size(26, 13);
+            this.darkLabel10.TabIndex = 83;
+            this.darkLabel10.Text = "max";
+            // 
+            // darkLabel11
+            // 
+            this.darkLabel11.AutoSize = true;
+            this.darkLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.darkLabel11.Location = new System.Drawing.Point(303, 268);
+            this.darkLabel11.Name = "darkLabel11";
+            this.darkLabel11.Size = new System.Drawing.Size(23, 13);
+            this.darkLabel11.TabIndex = 84;
+            this.darkLabel11.Text = "min";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(594, 471);
+            this.Controls.Add(this.darkLabel11);
+            this.Controls.Add(this.darkLabel10);
             this.Controls.Add(this.darkLabel7);
             this.Controls.Add(this.darkLabel9);
             this.Controls.Add(this.darkLabel3);
@@ -371,7 +395,7 @@ namespace VitchMat_SLAY
             this.Controls.Add(this.darkLabel1);
             this.Controls.Add(this.t_raz);
             this.Name = "Form1";
-            this.Text = "Решение СЛАУ";
+            this.Text = "Степеной Метод";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Xmax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Y0)).EndInit();
@@ -408,6 +432,8 @@ namespace VitchMat_SLAY
         private DarkUI.Controls.DarkLabel darkLabel3;
         private DarkUI.Controls.DarkLabel darkLabel7;
         private DarkUI.Controls.DarkLabel darkLabel9;
+        private DarkUI.Controls.DarkLabel darkLabel10;
+        private DarkUI.Controls.DarkLabel darkLabel11;
     }
 }
 
