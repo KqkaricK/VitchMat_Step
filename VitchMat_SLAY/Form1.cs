@@ -74,6 +74,9 @@ namespace VitchMat_SLAY                                                      // 
             {
                 Razmer();
                 darkButton2.Enabled = true;
+                Lmax.Text = "0";
+                Lmin.Text = "0";
+                l_k.Text = "0";
             }
         }
 

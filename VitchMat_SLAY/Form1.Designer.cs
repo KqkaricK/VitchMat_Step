@@ -215,9 +215,9 @@ namespace VitchMat_SLAY
             this.l_k.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.l_k.Location = new System.Drawing.Point(470, 255);
             this.l_k.Name = "l_k";
-            this.l_k.Size = new System.Drawing.Size(10, 13);
+            this.l_k.Size = new System.Drawing.Size(13, 13);
             this.l_k.TabIndex = 71;
-            this.l_k.Text = "-";
+            this.l_k.Text = "0";
             // 
             // darkLabel2
             // 
